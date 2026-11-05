@@ -1,0 +1,27 @@
+import pandas as pd
+data={"Name":["Deep","ghanshyam","dhanshyan","jagdish","raj","mahesh","suresh","ramesh","kamlesh","hamlesh","kelash"],
+      "Age": [15,17,23,18,28,38,25,18,19,35,43],
+      "Salary":[110000,100000,180000,400000,90000,500000,260000,25000000,500000,150000,270000]}
+store_=pd.DataFrame(data)
+print("Default head")
+print(store_.head())
+print("head optional")
+print(store_.head(3))
+print("Default tail")
+print(store_.tail())
+print("Optional tail")
+print(store_.tail(4))
+print("Info method usage")
+print(store_.info())
+print("Describe method")
+print(store_.describe())
+print("shape")
+print(store_.columns)
+print("selecting coloumns")
+print(store_["Name"])
+print(" one conditional selecting")
+print(store_[store_["Age"]<=30])
+print("Many conditional selecting using &")
+print(store_[(store_["Age"]<=20)&(store_["Age"]>=15)])
+print("Many conditional selecting using |")
+print(store_[(store_["Age"]<=20)|(store_["Age"]>=15)])
