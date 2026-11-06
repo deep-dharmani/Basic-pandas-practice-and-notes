@@ -64,3 +64,13 @@ created by wes Mckinney in 2008 beacause while working at AQR capital management
 >conditional selecting:
 
        if we want data of coloumn under a specific condition  so we use this format: variable_name[variable_name["coloumn_name"]comparasion_operator value] for multiple conditions we use this format: variable_name[(variable_name["coloumn_name"]comprasion_operator value)&(variable_name["coloumn_name"]comparision_oparater value)] also we use or condition using this | symbol at the place of &. 
+>Adding coloumns:
+
+      we can add new coloumns and their data in a data so for that we use that syntax : varibale_name["coloumn_name"]=data for that variable.
+
+      we have another method for adding a variable which is insert using this we can add a coloumn at a specific index using this syntax of insert method variable_name.insert(index,"coloumn_name",data for that variable).
+>Updating data:
+        
+        we can easilly changing the data of a specific coloumn using thisa syntax variable_name.loc[row_no,"coloumn_name"]=new_data.
+>removing coloumns:
+       we can easilly remove a specific removing using a pandas method for that we use that syntax: variable_name.drop(coloumns=["coloumn_name"],inpalace=True) so in parenthesis write coloumns assigns that variable_name comma inspect assgns True it means it directly remove that coloumn if we write False then it assign a new data and if we want to remove  more than one coloumns than we have just inside box bracket add comma and in double codes we can write many columns and it will remove that.
