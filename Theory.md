@@ -73,4 +73,5 @@ created by wes Mckinney in 2008 beacause while working at AQR capital management
         
         we can easilly changing the data of a specific coloumn using thisa syntax variable_name.loc[row_no,"coloumn_name"]=new_data.
 >removing coloumns:
+>
        we can easilly remove a specific removing using a pandas method for that we use that syntax: variable_name.drop(coloumns=["coloumn_name"],inpalace=True) so in parenthesis write coloumns assigns that variable_name comma inspect assgns True it means it directly remove that coloumn if we write False then it assign a new data and if we want to remove  more than one coloumns than we have just inside box bracket add comma and in double codes we can write many columns and it will remove that.
